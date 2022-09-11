@@ -1,5 +1,6 @@
 import React from 'react';
 import Contacts from '../components/contacts/Contacts';
+import FooterHome from '../components/footerHome/FooterHome';
 import HeaderHome from '../components/headerHome/HeaderHome';
 import Intro from '../components/intro/Intro';
 import StartNow from '../components/startNow/StartNow';
@@ -17,6 +18,7 @@ const HomePage = () => {
         <WePresent />
         <Contacts />
       </main>
+      <FooterHome />
     </>
   )
 }
