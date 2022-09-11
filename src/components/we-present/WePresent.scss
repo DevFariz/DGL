@@ -1,0 +1,13 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/style.scss";
+
+.we-present{
+
+  &__desc{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    color: #013237;
+    margin-bottom: 60px;
+  }
+}
