@@ -1,0 +1,16 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/style.scss";
+
+.work-with-us{
+
+  margin-bottom: 300px;
+
+  &__text{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    color: #013237;
+    margin-bottom: 50px;
+  }
+}
+
