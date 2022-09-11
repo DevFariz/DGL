@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
+
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-size: 16px;
   margin: 0;
@@ -32,4 +33,25 @@ body{
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 7.8%;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: #4CA771;
+  mix-blend-mode: normal;
+  text-shadow: 0px 3px 6px rgba(56, 96, 47, 0.184314);
+}
+
+.btn-green{
+  background: #2B8790;
+  mix-blend-mode: normal;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.160784);
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
 }

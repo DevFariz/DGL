@@ -1,0 +1,38 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/style.scss";
+
+.intro{
+  padding: 16% 0;
+  background: url('../../resources/img/intro-bg.png') no-repeat;
+  background-position: right;
+  margin-bottom: 80px;
+
+  span{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    color: #013237;
+    margin-bottom: 30px;  
+  }
+
+  &-container{
+    max-width: 750px;
+  }
+
+  &-text{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #013237;
+    margin-bottom: 40px;
+  }
+
+  &-btn{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    color: #FFFFFF;
+    padding: 28px 65px 24px 73px;
+  }
+}
