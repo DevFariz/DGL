@@ -1,8 +1,10 @@
+import { HomePage } from "./pages";
+import "./styles/style.scss"
 
 function App() {
   return (
     <div className="App">
-      <h1>Title</h1>
+      <HomePage />
     </div>
   );
 }
