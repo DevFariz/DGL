@@ -13,8 +13,8 @@ const HomePage = () => {
       <HeaderHome />
       <main className="main">
         <Intro />
-        {/* <WorkWithUs />
-        <StartNow />
+        <WorkWithUs />
+        {/* <StartNow />
         <WePresent />
         <Contacts /> */}
       </main>

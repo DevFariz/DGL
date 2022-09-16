@@ -1,9 +1,18 @@
 @import "../../styles/mixin.scss";
 @import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
 
 .work-with-us{
 
-  margin-bottom: 300px;
+  margin-bottom: 150px;
+
+  @include xl{
+    margin-bottom: 100px;
+  }
+
+  @include md{
+    margin-bottom: 40px;
+  }
 
   &__text{
     font-weight: 500;
@@ -11,6 +20,18 @@
     line-height: 49px;
     color: #013237;
     margin-bottom: 50px;
+
+    @include xl{
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 35px;
+    }
+
+    @include md{
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 25px;
+    }
   }
 }
 

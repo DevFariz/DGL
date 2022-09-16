@@ -60,9 +60,14 @@ body{
     line-height: 66px;
   }
 
-  @include breakpoint(1440px){
+  @include xl{
     font-size: 32px;
     line-height: 48px;
+  }
+
+  @include md{
+    font-size: 28px;
+    line-height: 42px;
   }
 }
 
