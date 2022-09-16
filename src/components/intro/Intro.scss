@@ -1,11 +1,21 @@
 @import "../../styles/mixin.scss";
 @import "../../styles/style.scss";
+@import "../../styles//breakpoints.scss";
 
 .intro{
-  padding: 14% 0;
+  padding: 7% 0;
   background: url('../../resources/img/intro-bg.png') no-repeat;
+  background-size: contain;
   background-position: right;
   margin-bottom: 80px;
+
+  @include xl{
+    padding: 5% 0;
+  }
+
+  @include md{
+    background: none;
+  }
 
   span{
     display: inline-block;
@@ -14,10 +24,40 @@
     line-height: 49px;
     color: #013237;
     margin-bottom: 30px;  
+
+    @include xl{
+      font-size: 24px;
+      line-height: 42px;
+      margin-bottom: 20px;
+    }
+
+    @include xl{
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
   }
 
   &-container{
-    max-width: 750px;
+    max-width: 735px;
+
+    @include breakpoint(1440px){
+      max-width: 600px;
+    }
+
+    @include xl{
+      max-width: 540px;
+    }
+
+    @include lg{
+      max-width: 450px;
+    }
+
+    @include md{
+      text-align: center;
+      margin: 0 auto;
+      max-width: 90%;
+    }
   }
 
   &-text{
@@ -26,6 +66,16 @@
     line-height: 45px;
     color: #013237;
     margin-bottom: 40px;
+
+    @include breakpoint(1440px){
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    @include xl{
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 
   &-btn{
@@ -34,5 +84,17 @@
     line-height: 49px;
     color: #FFFFFF;
     padding: 28px 65px 24px 73px;
+
+    @include breakpoint(1440px){
+      padding: 20px 50px 18px 55px;
+      font-size: 20px;
+      line-height: 36px;
+    }
+
+    @include lg{
+      padding: 16px 40px 16px 48px;
+      font-size: 18px;
+      line-height: 32px;
+    }
   }
 }

@@ -33,19 +33,17 @@ body{
 .container{
 	max-width: 1920px;
 	margin: 0 auto;
-	padding: 0 140px;
+	padding: 0 120px;
   @include xl{
-    padding: 0 100px;
-
+    padding: 0 90px;
   }
 
   @include lg{
-    padding: 0 60px;
-
+    padding: 0 40px;
   }
 
   @include md{
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -57,6 +55,15 @@ body{
   color: #4CA771;
   mix-blend-mode: normal;
   text-shadow: 0px 3px 6px rgba(56, 96, 47, 0.184314);
+  @include breakpoint(1440px){
+    font-size: 48px;
+    line-height: 66px;
+  }
+
+  @include breakpoint(1440px){
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 .btn-green{
