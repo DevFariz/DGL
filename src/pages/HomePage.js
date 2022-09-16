@@ -11,14 +11,14 @@ const HomePage = () => {
   return (
     <>
       <HeaderHome />
-      <main className="main">
+      {/* <main className="main">
         <Intro />
         <WorkWithUs />
         <StartNow />
         <WePresent />
         <Contacts />
-      </main>
-      <FooterHome />
+      </main> */}
+      {/* <FooterHome /> */}
     </>
   )
 }

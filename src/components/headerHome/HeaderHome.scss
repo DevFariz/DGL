@@ -1,34 +1,102 @@
 @import "../../styles/mixin.scss";
 @import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
 
 
 .header{
   position: relative;
   padding: 45px 0;
   margin-bottom: 60px;
+
+  @include lg{
+    padding: 15px 0;
+  }
+
   &-container{
     @include flex-space-between;
+
+    img{
+      width: 150px;
+
+      @include xl{
+        width: 130px;
+      }
+
+      @include lg{
+        width: 110px;
+      }
+
+      @include md{
+        width: 90px;
+      }
+
+      @include sm{
+        width: 70px;
+      }
+    }
   }
 
   &-bg{
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
+    @include breakpoint(1200px){
+      display: none;
+    }
   }
 }
 
 .menu{
   display: flex;
 
-  &__item{
-    margin-left: 90px;
-  }
-
   &__link{
+    display: inline-block;
+    position: relative;
     text-decoration: none;
+    margin-left: 90px;
     font-weight: 700;
     font-size: 25px;
     line-height: 38px;
     color: #4CA771;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #3ebe72;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover{
+      color: #3ebe72;
+    }
+    &:hover::after{
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    @include xl{
+      font-size: 22px;
+      margin-left: 75px;
+    }
+
+    @include lg{
+      font-size: 19px;
+      margin-left: 60px;
+    }
+
+    @include md{
+      font-size: 16px;
+      margin-left: 45px;
+    }
+
+    @include sm{
+      font-size: 14px;
+      margin-left: 25px;
+    }
   }
 }

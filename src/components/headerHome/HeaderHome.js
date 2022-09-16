@@ -8,9 +8,7 @@ const HeaderHome = () => {
     <header className='header'>
       <div className='container'>
         <div className="header-container">
-          <div className="logo">
-            <img src={logo} alt="DIE GRÜNE LÖSUNG" />
-          </div>
+          <img src={logo} alt="DIE GRÜNE LÖSUNG" />
           <nav className="nav">
             <ul className="menu">
               <li className="menu__item">
