@@ -1,19 +1,48 @@
 @import "../../styles/mixin.scss";
 @import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
 
 
 .start-now{
-  padding-left: 7.8%;
+  padding-left: 140px;
   margin-bottom: 240px;
+
+  @include breakpoint(1400px){
+    padding-left: 100px;
+  }
+
+  @include xl{
+    padding-left: 75px;
+  }
+
+  @include lg{
+    padding-left: 50px;
+  }
+
+  @include md{
+    padding-left: 25px;
+  }
 
   &__title{
     text-align: center;
     font-weight: 500;
     font-size: 40px;
     line-height: 66px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     span{
       color: #2B8790;
+    }
+
+    @include xl{
+      font-size: 36px;
+      line-height: 56px;
+      margin-bottom: 75px;
+    }
+
+    @include md{
+      font-size: 28px;
+      line-height: 48px;
+      margin-bottom: 50px;
     }
   }
 
@@ -34,6 +63,34 @@
 
     &_03{
       transform: translateX(10%);
+    }
+
+    @include xl{
+      margin-bottom: 35px;
+      &_01{
+        transform: translateX(0);
+      }
+  
+      &_02{
+        transform: translateX(0);
+      }
+  
+      &_03{
+        transform: translateX(0);
+      }
+
+      img{
+        display: block;
+        width: 98px;
+        height: 98px;
+      }
+    }
+
+    @include md{
+     img{
+      width: 65px;
+      height: 65px; 
+     }
     }
   }
 
@@ -64,6 +121,27 @@
     &_04{
       background: url('../../resources/img/work-with-us-04-bg.png') no-repeat;
       background-size: cover;
+    }
+
+    @include breakpoint(1400px){
+      padding: 40px;
+      margin-left: 40px;
+      font-size: 48px;
+      line-height: 72px;
+    }
+
+    @include xl{
+      padding: 25px;
+      margin-left: 20px;
+      font-size: 36px;
+      line-height: 56px;
+    }
+
+    @include lg{
+      padding: 20px;
+      margin-left: 15px;
+      font-size: 28px;
+      line-height: 48px;
     }
   }
 }

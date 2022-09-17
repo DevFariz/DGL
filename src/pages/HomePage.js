@@ -14,8 +14,8 @@ const HomePage = () => {
       <main className="main">
         <Intro />
         <WorkWithUs />
-        {/* <StartNow />
-        <WePresent />
+        <StartNow />
+        {/* <WePresent />
         <Contacts /> */}
       </main>
       {/* <FooterHome /> */}
