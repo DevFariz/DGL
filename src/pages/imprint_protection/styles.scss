@@ -1,0 +1,53 @@
+@import "../../styles/style.scss";
+
+a{
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  color: #013237;
+}
+
+
+.imprint_protection{
+  background: #2B8790;
+  padding: 110px 0;
+  min-height: 100vh;
+
+  &-container{
+    background: #fff;
+    padding: 60px 100px 120px;
+    border-radius: 30px;
+  }
+
+  &-back__main{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #707070;
+    margin-bottom: 55px;
+  }
+
+  &-title{
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 98px;
+    color: #013237;
+    mix-blend-mode: normal;
+    text-shadow: 0px 3px 6px rgba(56, 96, 47, 0.184314);
+    margin-bottom: 80px;
+  }
+
+  &-text{
+    font-size: 25px;
+    line-height: 25px;
+    color: #013237;
+
+    &_title{
+      margin-top: 20px;
+    }
+  }
+}
+
