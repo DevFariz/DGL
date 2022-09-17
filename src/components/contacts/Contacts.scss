@@ -1,5 +1,6 @@
 @import "../../styles/mixin.scss";
 @import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
 
 .contacts{
   background: url('../../resources/img/forms-bg.jpg') no-repeat;
@@ -8,7 +9,18 @@
 
   &-container{
     padding: 180px 0 175px;
-    
+
+    @include xl{
+      padding: 150px 0;
+    }
+
+    @include md{
+      padding: 100px 0 50px;
+    }
+  }
+
+  @include md{
+    background: none;
   }
 }
 
@@ -20,6 +32,12 @@
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
   margin-bottom: 105px;
+
+  @include breakpoint(1400px){
+    padding: 35px 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 
   &__title{
     font-weight: 500;
@@ -57,6 +75,18 @@
     &__align-bottom{
       align-self: flex-start;
     }
+
+    @include breakpoint(1400px){
+      grid-column: span 4;
+    }
+
+    @include breakpoint(880px){
+      grid-column: span 7;
+    }
+
+    @include md{
+      grid-column: span 8;
+    }
   }
 
   &-accept{
@@ -69,6 +99,17 @@
     background: #EAF7E6;
     mix-blend-mode: normal;
     border-radius: 8px;
+    @include breakpoint(1400px){
+      grid-column: span 4;
+    }
+
+    @include breakpoint(880px){
+      grid-column: span 7;
+    }
+
+    @include md{
+      grid-column: span 8;
+    }
   }
 
   &-btn{
@@ -79,5 +120,18 @@
     font-size: 27px;
     line-height: 44px;
     align-self: flex-end;
+    @include breakpoint(1400px){
+      grid-column: span 3;
+    }
+
+    @include breakpoint(880px){
+      font-size: 24px;
+      line-height: 36px;
+      grid-column: span 4;
+    }
+
+    @include md{
+      grid-column: span 6;
+    }
   }
 }
