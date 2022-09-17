@@ -1,20 +1,47 @@
 @import "../../styles/mixin.scss";
 @import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
 
 .footer{
-  padding: 158px 0;
+  padding: 158px 6px;
   background: #2B8790;
   mix-blend-mode: normal;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.160784), inset 0px 3px 6px rgba(0, 0, 0, 0.160784);
+
+  @include lg{
+    padding: 100px 6px;
+  }
+
+  @include breakpoint(660px){
+    padding: 60px 15px;
+  }
 
   &-container{
     max-width: 940px;
     margin: 0 auto 142px;
     @include flex-space-between;
+    align-items: start;
+
+    @include breakpoint(660px){
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto 80px;
+    }
+  }
+
+  &-left{
+    @include breakpoint(660px){
+      margin-bottom: 40px;
+      text-align: center;
+    }
   }
 
   &-right{
     text-align: right;
+
+    @include breakpoint(660px){
+      text-align: center;
+    }
   }
 
   &__title{
@@ -23,6 +50,9 @@
     line-height: 35px;  
     color: #FFFFFF;
     margin-bottom: 58px;
+    @include breakpoint(660px){
+      margin-bottom: 25px;
+    }
   }
 
   &-link{
@@ -44,11 +74,20 @@
       line-height: 29px;
       color: #FFFFFF;
       padding-right: 30px;
+
+      @include breakpoint(660px){
+        display: block;
+        margin-bottom: 20px;
+      }
     }
 
     a{
       position: relative;
       padding: 0 30px;
+
+      @include breakpoint(660px){
+        display: block;
+      }
 
       &::before{
         content: '';
@@ -58,6 +97,10 @@
         width: 3px;
         height: 100%;
         background-color: #fff;
+
+        @include breakpoint(660px){
+          display: none;
+        }
       }
     }
   }

@@ -18,7 +18,7 @@ const HomePage = () => {
         <WePresent />
         <Contacts />
       </main>
-      {/* <FooterHome /> */}
+      <FooterHome />
     </>
   )
 }
