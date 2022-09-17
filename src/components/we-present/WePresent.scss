@@ -1,5 +1,6 @@
 @import "../../styles/mixin.scss";
 @import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
 
 .we-present{
 
@@ -9,5 +10,17 @@
     line-height: 49px;
     color: #013237;
     margin-bottom: 60px;
+
+    @include xl{
+      font-size: 28px;
+      line-height: 42px;
+      margin-bottom: 45px;
+    }
+  
+    @include md{
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 30px;
+    }
   }
 }

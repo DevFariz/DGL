@@ -9,18 +9,22 @@
 
   @include breakpoint(1400px){
     padding-left: 100px;
+    margin-bottom: 200px;
   }
 
   @include xl{
     padding-left: 75px;
+    margin-bottom: 160px;
   }
 
   @include lg{
     padding-left: 50px;
+    margin-bottom: 120px;
   }
 
   @include md{
     padding-left: 25px;
+    margin-bottom: 80px;
   }
 
   &__title{
