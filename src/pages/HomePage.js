@@ -1,11 +1,11 @@
 import React from 'react';
-import Contacts from '../components/contacts/Contacts';
-import FooterHome from '../components/footerHome/FooterHome';
-import HeaderHome from '../components/headerHome/HeaderHome';
-import Intro from '../components/intro/Intro';
-import StartNow from '../components/startNow/StartNow';
-import WePresent from '../components/we-present/WePresent';
-import WorkWithUs from '../components/work-with-us/WorkWithUs';
+import Contacts from '../components/mainPageComponents/contacts/Contacts';
+import FooterHome from '../components/mainPageComponents/footerHome/FooterHome';
+import HeaderHome from '../components/mainPageComponents/headerHome/HeaderHome';
+import Intro from '../components/mainPageComponents/intro/Intro';
+import StartNow from '../components/mainPageComponents/startNow/StartNow';
+import WePresent from '../components/mainPageComponents/we-present/WePresent';
+import WorkWithUs from '../components/mainPageComponents/work-with-us/WorkWithUs';
 
 const HomePage = () => {
   return (

@@ -1,10 +1,10 @@
-@import "../../styles/mixin.scss";
-@import "../../styles/style.scss";
-@import "../../styles//breakpoints.scss";
+@import "../../../styles/mixin.scss";
+@import "../../../styles/style.scss";
+@import "../../../styles/breakpoints.scss";
 
 .intro{
   padding: 7% 0;
-  background: url('../../resources/img/intro-bg.png') no-repeat;
+  background: url('../../../resources/img/intro-bg.png') no-repeat;
   background-size: contain;
   background-position: right;
   margin-bottom: 80px;

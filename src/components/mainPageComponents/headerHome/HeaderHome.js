@@ -1,7 +1,7 @@
 import './HeaderHome.scss';
 
-import logo from "../../resources/img/logo.jpg";
-import headerBg from "../../resources/img/header-bg.jpg";
+import logo from "../../../resources/img/logo.jpg";
+import headerBg from "../../../resources/img/header-bg.jpg";
 
 const HeaderHome = () => {
   return (

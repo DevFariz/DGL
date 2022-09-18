@@ -1,5 +1,5 @@
 import './WePresent.scss';
-import wePresent from '../../resources/img/we-present.jpg';
+import wePresent from '../../../resources/img/we-present.jpg';
 
 const WePresent = () => {
   return (

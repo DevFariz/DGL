@@ -1,6 +1,7 @@
-@import "../../styles/mixin.scss";
-@import "../../styles/style.scss";
-@import "../../styles/breakpoints.scss";
+@import "../../../styles/mixin.scss";
+@import "../../../styles/style.scss";
+@import "../../../styles/breakpoints.scss";
+
 
 
 .start-now{
@@ -108,22 +109,22 @@
     color: #013237;
 
     &_01{
-      background: url('../../resources/img/work-with-us-01-bg.png') no-repeat;
+      background: url('../../../resources/img/work-with-us-01-bg.png') no-repeat;
       background-size: cover;
     }
 
     &_02{
-      background: url('../../resources/img/work-with-us-02-bg.png') no-repeat;
+      background: url('../../../resources/img/work-with-us-02-bg.png') no-repeat;
       background-size: cover;
     }
 
     &_03{
-      background: url('../../resources/img/work-with-us-03-bg.png') no-repeat;
+      background: url('../../../resources/img/work-with-us-03-bg.png') no-repeat;
       background-size: cover;
     }
 
     &_04{
-      background: url('../../resources/img/work-with-us-04-bg.png') no-repeat;
+      background: url('../../../resources/img/work-with-us-04-bg.png') no-repeat;
       background-size: cover;
     }
 

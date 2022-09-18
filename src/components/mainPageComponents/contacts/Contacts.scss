@@ -1,9 +1,9 @@
-@import "../../styles/mixin.scss";
-@import "../../styles/style.scss";
-@import "../../styles/breakpoints.scss";
+@import "../../../styles/mixin.scss";
+@import "../../../styles/style.scss";
+@import "../../../styles/breakpoints.scss";
 
 .contacts{
-  background: url('../../resources/img/forms-bg.jpg') no-repeat;
+  background: url('../../../resources/img/forms-bg.jpg') no-repeat;
   background-size: cover;
   background-position-y: top 43px;
 

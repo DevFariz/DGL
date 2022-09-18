@@ -1,9 +1,9 @@
 import './StartNow.scss';
 
-import startNow01 from "../../resources/svg/start-now-01.svg";
-import startNow02 from "../../resources/svg/start-now-02.svg";
-import startNow03 from "../../resources/svg/start-now-03.svg";
-import startNow04 from "../../resources/svg/start-now-04.svg";
+import startNow01 from "../../../resources/svg/start-now-01.svg";
+import startNow02 from "../../../resources/svg/start-now-02.svg";
+import startNow03 from "../../../resources/svg/start-now-03.svg";
+import startNow04 from "../../../resources/svg/start-now-04.svg";
 
 const StartNow = () => {
   return (

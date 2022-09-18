@@ -1,5 +1,5 @@
 import './WorkWithUs.scss';
-import workWithUs from "../../resources/img/work-with-us.png";
+import workWithUs from "../../../resources/img/work-with-us.png";
 
 const WorkWithUs = () => {
   return (
