@@ -1,0 +1,122 @@
+@import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
+@import "../../styles/mixin.scss";
+
+.login-signup{
+  background-color: #2b8790;
+  min-height: 100vh;
+  padding: 100px 0;
+
+  @include xl{
+    padding: 60px 0;
+  }
+
+  &-container{
+    text-align: center;
+    background-color: #fff;
+    padding: 65px 104px 120px;
+    mix-blend-mode: normal;
+    border: 1px solid #707070;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.160784);
+    border-radius: 30px;
+    @include xl{
+      padding: 45px 75px 85px;
+    }
+    @include xl{
+      padding: 30px 50px 65px;
+    }
+  }
+
+  &__back{
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #707070;
+    mix-blend-mode: normal;
+    margin-bottom: 67px;
+    @include lg{
+      margin-bottom: 45px;
+    }
+  }
+
+  &__title{
+    max-width: 750px;
+    margin: 0 auto 25px;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #4CA771;
+    mix-blend-mode: normal;
+    text-shadow: 0px 3px 6px rgba(56, 96, 47, 0.184314);
+    @include xl{
+      font-size: 48px;
+      line-height: 66px;
+    }
+    @include xl{
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+
+  &__text{
+    max-width: 680px;
+    margin: 0 auto 25px;
+    font-size: 30px;
+    line-height: 45px;
+    color: #013237;
+    mix-blend-mode: normal;
+    @include xl{
+      font-size: 24px;
+      line-height: 36px;
+    }
+    @include xl{
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+
+  &__create{
+    padding: 22px 98px 18px;
+    font-size: 37px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    @include xl{
+      padding: 15px 60px 12px;
+      font-size: 28px;
+      line-height: 48px;
+    }
+    @include xl{
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  &__login{
+    padding: 22px 164px 18px;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 61px;
+    color: #2B8790;
+    border: 2px solid #2B8790;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.160784);
+    background-color: #fff;
+    border-radius: 40px;
+    cursor: pointer; 
+    transition: 0.3s;
+    &:hover{
+      background-color: #EAF7E6;
+    }
+    @include xl{
+      padding: 15px 115px 12px;
+      font-size: 28px;
+      line-height: 48px;
+    }
+    @include xl{
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}

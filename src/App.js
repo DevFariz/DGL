@@ -1,4 +1,4 @@
-import { HomePage, ImprintPage, ProtectionPage } from "./pages";
+import { HomePage, ImprintPage, ProtectionPage, LoginSignUpStartPage } from "./pages";
 import "./styles/style.scss"
 
 function App() {
@@ -6,7 +6,8 @@ function App() {
     <div className="App">
       {/* <HomePage /> */}
       {/* <ImprintPage /> */}
-      <ProtectionPage />
+      {/* <ProtectionPage /> */}
+      <LoginSignUpStartPage />
     </div>
   );
 }
