@@ -3,9 +3,12 @@
 @import "../../styles/mixin.scss";
 
 .login-signup{
+  position: relative;
   background-color: #2b8790;
   min-height: 100vh;
   padding: 100px 0;
+  color: #979797;
+  overflow: hidden;
 
   @include xl{
     padding: 60px 0;
@@ -27,7 +30,15 @@
     }
   }
 
-  &__back{
+  &__logo{
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+
+  &__link{
+    display: block;
     text-align: left;
     font-size: 12px;
     line-height: 12px;
@@ -37,6 +48,11 @@
     margin-bottom: 67px;
     @include lg{
       margin-bottom: 45px;
+    }
+    &_forgot{
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 25px;
     }
   }
 
@@ -75,6 +91,34 @@
       font-size: 20px;
       line-height: 32px;
     }
+
+    &_small{
+      font-size: 12px;
+      line-height: 12px;
+      color: #8692A6;
+      padding-right: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      margin-bottom: 16px;
+      img{
+        margin-left: 5px;
+      }
+    }
+
+    &_medium{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #979797;
+      margin-bottom: 15px;
+      a{
+        font-size: 18px;  
+        display: inline;
+        text-decoration: underline;
+        color: #2B8790;
+      }
+    }
   }
 
   &__create{
@@ -94,7 +138,7 @@
     }
   }
 
-  &__login{
+  &__login-btn{
     padding: 22px 164px 18px;
     font-weight: 500;
     font-size: 37px;
@@ -118,5 +162,28 @@
       font-size: 24px;
       line-height: 36px;
     }
+  }
+
+  &__input{
+    display: inline-block;
+    padding: 17px 30px 23px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #7F7F7F;
+    outline: none;
+    border: 1px solid #727272;
+    border-radius: 30px;
+    &_lg{
+      width: 536px;
+    }
+  }
+
+  &__dec-img{
+    position: absolute;
+    bottom: -500px;
+    left: -420px;
+    z-index: 2;
   }
 }
