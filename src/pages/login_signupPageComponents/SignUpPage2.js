@@ -5,12 +5,12 @@ import lock from '../../resources/svg/lock.svg';
 
 const SignUpPage2 = () => {
   return (
-    <div className='login-signup login'>
+    <div className='login-signup'>
       <div className="container">
         <div className="login-signup-container">
           <a href="#a" className="login-signup__link">zurück</a>
           <div className="login-signup_2">
-            <h1 className="signup__title">Benutzerkonto erstellen</h1>
+            <h1 className="signup__title signup__title_sm">Benutzerkonto erstellen</h1>
             <form>
               <label className='login-signup__label' htmlFor="name">Benutzername</label>
               <input 

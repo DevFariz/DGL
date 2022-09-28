@@ -2,11 +2,11 @@ import React from 'react'
 
 const SignUpPage1 = () => {
   return (
-    <div className='login-signup login'>
+    <div className='login-signup'>
       <div className="container">
         <div className="login-signup-container">
           <a href="#a" className="login-signup__link">zurück</a>
-          <h1 className="signup__title">Benutzerkonto erstellen</h1>
+          <h1 className="signup__title signup__title_sm">Benutzerkonto erstellen</h1>
           <form className='login-signup_1'>
             <div className="signup-inputs-container">
               <input 
