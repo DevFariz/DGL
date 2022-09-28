@@ -6,7 +6,7 @@ const SignUpPage1 = () => {
       <div className="container">
         <div className="login-signup-container">
           <a href="#a" className="login-signup__link">zurück</a>
-          <div className="signup__title">Benutzerkonto erstellen</div>
+          <h1 className="signup__title">Benutzerkonto erstellen</h1>
           <form className='login-signup_1'>
             <div className="signup-inputs-container">
               <input 
