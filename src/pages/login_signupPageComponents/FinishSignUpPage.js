@@ -11,7 +11,7 @@ const FinishSignUpPage = () => {
             »Toll, dass du dich angemeldet hast. Ich helfe dir, dich in »Der Grünen Lösung« zurecht zu finden. Lass uns gemeinsam nachhaltig aktiv werden. 
             Ich erkläre dir, wie du dich auf deinem Dashboard zurecht findest«
           </p>
-          <button className="btn-green login-signup__finish-btn" style={{marginRight: "50px"}}>LOS GEHT’S</button>
+          <button className="btn-green login-signup__finish-btn" style={{marginRight: "40px"}}>LOS GEHT’S</button>
           <button className="btn-green login-signup__finish-btn">ÜBERSPRINGEN</button>
         </form>
       </div>

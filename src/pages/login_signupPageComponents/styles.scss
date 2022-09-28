@@ -14,15 +14,27 @@
     max-width: 536px;
     margin-left: auto;
     margin-right: 180px;
+
+    @include lg{
+      margin: 0 auto;
+    }
   }
 
   &_2{
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint(1600px){
+      flex-direction: column;
+    }
+
     form{
       max-width: 536px;
       margin-right: 180px;
+
+      @include breakpoint(1600px){
+        margin: 0 auto;
+      }
 
       button{
         margin-top: 50px;
@@ -54,6 +66,28 @@
     font-weight: 500;
     margin-top: 180px;
     margin-bottom: 45px;
+
+    @include breakpoint(1400px){
+      padding: 15px 60px 12px;
+      margin-top: 140px;
+    }
+
+    @include xl{
+      margin-top: 40px;
+    }
+
+    @include lg{
+      font-size: 20px;
+      line-height: 32px;
+      padding: 15px 30px 12px;
+      width: 45%;
+    }
+
+    @include md{
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   @include xl{
@@ -221,8 +255,13 @@
     outline: none;
     border: 1px solid #727272;
     border-radius: 30px;
+    margin-right: 5px;
     &_lg{
       width: 536px;
+
+      @include md{
+        width: 100%;
+      }
     }
     &_md{
       width: 422px;
@@ -240,6 +279,20 @@
     bottom: -500px;
     left: -420px;
     z-index: 2;
+
+    @include breakpoint(1400px){
+      bottom: -550px;
+      left: -500px;
+    }
+
+    @include xl{
+      bottom: -650px;
+      left: -600px;
+    }
+
+    @include lg{
+      display: none;
+    }
   }
 }
 
@@ -253,11 +306,20 @@
     color: #013237;
     mix-blend-mode: normal;
     text-shadow: 0px 3px 6px rgba(56, 96, 47, 0.184314);
+    margin-bottom: 20px;
     &_sm{
       max-width: 500px;
     }
     &_lg{
       max-width: 940px;
+    }
+    @include lg{
+      font-size: 48px;
+      line-height: 64px;
+    }
+    @include md{
+      font-size: 32px;
+      line-height: 48px;
     }
   }
 
@@ -269,5 +331,9 @@
   &-finish{
     background: url('../../resources/img/finsih-sign-up.jpg') no-repeat;
     background-position: 90% 70%;
+
+    @include breakpoint(1400px){
+      background: none;
+    }
   }
 }
