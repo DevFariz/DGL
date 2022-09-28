@@ -10,6 +10,20 @@
   color: #979797;
   overflow: hidden;
 
+  &_1{
+    max-width: 536px;
+    margin-left: auto;
+    margin-right: 180px;
+  }
+
+  &__submit-btn{
+    padding: 15px 100px 12px;
+    font-size: 27px;
+    line-height: 44px;
+    font-weight: 500;
+    margin-bottom: 45px;
+  }
+
   @include xl{
     padding: 60px 0;
   }
@@ -178,6 +192,15 @@
     &_lg{
       width: 536px;
     }
+    &_md{
+      width: 422px;
+    }
+    &_sm{
+      width: 260px;
+    }
+    &_esm{
+      width: 105px;
+    }
   }
 
   &__dec-img{
@@ -185,5 +208,24 @@
     bottom: -500px;
     left: -420px;
     z-index: 2;
+  }
+}
+
+.signup{
+
+  &__title{
+    max-width: 500px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 75px;
+    color: #013237;
+    mix-blend-mode: normal;
+    text-shadow: 0px 3px 6px rgba(56, 96, 47, 0.184314);
+  }
+
+  &-inputs-container{
+    display: flex;
+    justify-content: space-between;
   }
 }

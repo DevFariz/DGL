@@ -14,7 +14,7 @@ const LoginPage = () => {
             <input type="text" className='login-signup__input login-signup__input_lg' placeholder='Benutzername' /> <br />
             <input type="password" className='login-signup__input login-signup__input_lg' placeholder='Passwort'/> <br />
             <a href="#a" className='login-signup__link login-signup__link_forgot'>Passwort vergessen?</a> <br />
-            <button className='btn-green' style={{padding: "15px 100px 12px", fontSize: '27px', lineHeight: "44px", fontWeight: '500', marginBottom:'45px'}}>ANMELDEN</button>
+            <button className='btn-green login-signup__submit-btn'>ANMELDEN</button>
             <p className="login-signup__text_small">Your Info is safely secured <img src={lock} alt="lock" /></p>
             <p className='login-signup__text_medium'>
               Du hast noch kein Konto? Registriere dich <a href="#a">hier</a>.
