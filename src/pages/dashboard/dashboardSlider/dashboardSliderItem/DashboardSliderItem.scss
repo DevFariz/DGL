@@ -1,0 +1,34 @@
+@import "../../../../styles/style.scss";
+@import "../../../../styles/breakpoints.scss";
+@import "../../../../styles/mixin.scss";
+
+.dashboard-slider__item {
+  position: relative;
+  text-align: center;
+  padding: 104px 24px;
+  min-height: 720px;
+
+  &-title{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 66px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+
+  &-text{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #FFFFFF;
+  }
+
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
