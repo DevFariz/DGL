@@ -3,8 +3,15 @@
 @import "../../styles/mixin.scss";
 
 .dashboard{
-
   &-container{
     display: flex;
+    flex-basis: 81%;
   }
+
+  &-content{
+    padding: 50px;
+    flex-basis: 100%;
+  }
+
+  
 }

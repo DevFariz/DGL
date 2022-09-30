@@ -1,13 +1,21 @@
-import './Dashboard.scss';
 import Navbar from '../../components/navbar/Navbar';
+import DashboardHeader from './dashboardHeader/DashboardHeader';
+
+import './Dashboard.scss';
+
 
 const Dashboard = () => {
+
+
   return (
     <div className='dashboard-container'>
       <Navbar />
-      <main className="dashboard-main">
-        Main
-      </main>
+      <div className='dashboard-content'>
+        <DashboardHeader />
+        <main className="dashboard-main">
+          Main
+        </main>
+      </div>
     </div>
   )
 }
