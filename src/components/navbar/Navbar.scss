@@ -1,0 +1,101 @@
+@import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
+@import "../../styles/mixin.scss";
+
+.nav-panel{
+    padding: 45px 0 30px;
+    background-color: #707070;
+    text-align: center;
+    height: 100%;
+    flex-basis: 19%;
+
+    @include xl{
+      padding: 35px 0 25px;
+    }
+
+    &__logo{
+      display: inline-block;
+      margin-bottom: 60px;
+
+      @include xl{
+        margin-bottom: 45px;
+      }
+
+      @include lg{
+        margin-bottom: 30px;
+      }
+    }
+
+    &__menu{
+      padding-left: 60px;
+
+      @include xl{
+        padding-left: 45px;
+      }
+
+      @include lg{
+        padding-left: 30px;
+      }
+
+      @include md{
+        padding-left: 0;
+      }
+    }
+
+    &__item{
+      text-align: left;
+      margin-bottom: 40px;
+      font-size: 23px;
+      line-height: 38px;
+
+      &:last-child{
+        margin-bottom: 120px;
+      }
+    } 
+
+    &__link{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      display: block;
+      padding: 15px 40px 20px 30px;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      
+      &_active{
+        background: linear-gradient(89.14deg, #4EA771 -14.22%, #2F8991 122.33%);
+      }
+
+      &:hover{
+        background: linear-gradient(89.14deg, #4EA771 -14.22%, #2F8991 122.33%);
+      }
+
+      img{
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+      }
+
+      span{
+        margin-left: 11px;
+      }
+    }
+
+    &__bottom{
+      padding: 0 65px;
+      display: flex;
+      justify-content: space-between;
+
+      &-link{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-decoration: underline;
+        margin-right: 10px;
+      }
+    }
+}

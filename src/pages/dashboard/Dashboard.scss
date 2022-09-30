@@ -1,0 +1,10 @@
+@import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
+@import "../../styles/mixin.scss";
+
+.dashboard{
+
+  &-container{
+    display: flex;
+  }
+}
