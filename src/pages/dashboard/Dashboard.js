@@ -1,5 +1,7 @@
 import Navbar from '../../components/navbar/Navbar';
 import DashboardHeader from './dashboardHeader/DashboardHeader';
+import DashboardSavings from './dashboardSavings/DashboardSavings';
+
 
 import './Dashboard.scss';
 
@@ -13,7 +15,7 @@ const Dashboard = () => {
       <div className='dashboard-content'>
         <DashboardHeader />
         <main className="dashboard-main">
-          Main
+          <DashboardSavings />
         </main>
       </div>
     </div>

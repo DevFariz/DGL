@@ -1,0 +1,25 @@
+@import "../../../styles/style.scss";
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/mixin.scss";
+
+.dashboard-savings{
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.160784);
+  border-radius: 10px;  
+  padding: 28px 15px;
+  flex-basis: 39%;
+
+  &__title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    color: #727272;
+    padding-left: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__items{
+    img{
+      margin-right: 10px;
+    }
+  }
+}
