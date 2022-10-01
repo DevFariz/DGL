@@ -7,6 +7,7 @@ import './Dashboard.scss';
 import DashboardSlider from './dashboardSlider/DashboardSlider';
 import DashboardStatistics from './dashboardStatistics/DashboardStatistics';
 import DashboardDiagram from './dashboardDiagram/DashboardDiagram';
+import DashboardActivities from './dashboardActvities/DashboardActivities';
 
 
 const Dashboard = () => {
@@ -22,6 +23,7 @@ const Dashboard = () => {
           <DashboardSlider />
           <DashboardStatistics />
           <DashboardDiagram />
+          <DashboardActivities />
         </main>
       </div>
     </div>

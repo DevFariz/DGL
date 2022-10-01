@@ -1,0 +1,55 @@
+@import "../../../styles/style.scss";
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/mixin.scss";
+
+.dashboard-activities {
+  grid-area: area-5;
+  grid-column: span 7;
+  grid-row: span 8;
+  padding: 30px;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.160784);
+  border-radius: 10px;
+  align-self: start;
+
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    color: #727272;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #2B8790 -59.04%, #BEE4B9 100%, #F097A2 100%, #F8BFC8 100%);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    &-img{
+      padding: 14px 15px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    &-content {
+      max-width: 200px;
+      margin-left: 27px;
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 21px;
+      color: #FFFFFF;
+      margin-bottom: 5px;
+    }
+
+    &-text {
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+  }
+}
