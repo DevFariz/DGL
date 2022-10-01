@@ -3,5 +3,6 @@
 @import "../../../styles/mixin.scss";
 
 .dashboard-statistics{
-  flex-basis: 33%;
+  grid-area: area-3;
+  grid-column: span 7;
 }

@@ -10,11 +10,17 @@
 
   &-content{
     padding: 50px;
-    flex-basis: 100%;
   }
 
   &-main{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 30px;
+    grid-template-areas: 
+      "area-1 area-2 area-3"
+      "area-4 area-2 area-5"
+    ;
   }
   
 }
