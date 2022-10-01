@@ -43,6 +43,7 @@
     }
 
     &__item{
+      position: relative;
       text-align: left;
       margin-bottom: 40px;
       font-size: 23px;
@@ -58,18 +59,24 @@
       display: flex;
       align-items: center;
       font-weight: 500;
+      font-size: 23px;
+      line-height: 38px;
       display: block;
       padding: 15px 40px 20px 30px;
       color: #FFFFFF;
       text-decoration: none;
+      text-align: left;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+      border: none;
+      background: transparent;
       
       &_active{
         background: linear-gradient(89.14deg, #4EA771 -14.22%, #2F8991 122.33%);
       }
 
       &:hover{
+        cursor: pointer;
         background: linear-gradient(89.14deg, #4EA771 -14.22%, #2F8991 122.33%);
       }
 

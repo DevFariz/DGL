@@ -1,0 +1,21 @@
+@import "../../styles/style.scss";
+@import "../../styles/breakpoints.scss";
+@import "../../styles/mixin.scss";
+
+.dropdown{
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  padding: 30px 10px 10px 50px;
+  background: linear-gradient(180deg, #2B8790 -50.97%, #BEE4B9 100%);
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  z-index: 2;
+
+  &-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 25px;
+  }
+}
