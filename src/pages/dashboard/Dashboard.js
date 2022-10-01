@@ -5,6 +5,7 @@ import DashboardSavings from './dashboardSavings/DashboardSavings';
 
 import './Dashboard.scss';
 import DashboardSlider from './dashboardSlider/DashboardSlider';
+import DashboardStatistics from './dashboardStatistics/DashboardStatistics';
 
 
 const Dashboard = () => {
@@ -18,6 +19,7 @@ const Dashboard = () => {
         <main className="dashboard-main">
           <DashboardSavings />
           <DashboardSlider />
+          <DashboardStatistics />
         </main>
       </div>
     </div>
