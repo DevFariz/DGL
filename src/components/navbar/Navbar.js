@@ -20,11 +20,11 @@ const Navbar = () => {
     learn: ['Fortbildungs-Seminare']
   }
 
-  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState('');
 
-  // function toggleDropdown(){
-  //   setIsDropdownOpen(!isDropdownOpen);
-  // }
+  function toggleDropdown(){
+    setIsDropdownOpen();
+  }
 
   return (
     <nav className='nav-panel'>
@@ -37,14 +37,14 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-panel__item">
-          <button className="nav-panel__link">
+          <button className="nav-panel__link" onClick={toggleDropdown}>
             <img src={profileLogo} alt="profile-icon" />
             <span>Profil</span>
           </button>
           <Dropdown links={dropdownData.profile}/> 
         </li>
         <li className="nav-panel__item">
-          <button className="nav-panel__link">
+          <button className="nav-panel__link" onClick={toggleDropdown}>
             <img src={activitiesLogo} alt="activities-icon" />
             <span>Aktivitäten</span>
             <Dropdown links={dropdownData.activities}/> 
