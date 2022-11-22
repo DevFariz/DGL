@@ -1,25 +1,26 @@
-import './Dropdown.scss'
+import { useState } from "react";
+import "./Dropdown.scss";
 
-const Dropdown = ({links, isDropdownOpen}) => {
+const Dropdown = ({ links, setIsDropdownOpen }) => {
   return (
     <>
-      {isDropdownOpen ? <DropdownList links={links}/> : null}
+      <div className="dropdown">
+        <ul className="dropdown-menu">
+          {links.map((item, i) => {
+            return (
+              <li
+                className="dropdown-item"
+                key={i}
+                onClick={() => setIsDropdownOpen(false)}
+              >
+                <a href="#a">{item}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </>
-          
-  )
-}
+  );
+};
 
-const DropdownList = (links) => {
-  <div className="dropdown">
-    <ul className="dropdown-menu">
-      {links.map((item, i) => {
-        return (
-          <li className="dropdown-item" key={i}>
-            {item}
-          </li>)
-      })}
-    </ul>
-  </div>
-}
-
-export default Dropdown
+export default Dropdown;

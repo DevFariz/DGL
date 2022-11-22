@@ -1,83 +1,139 @@
-import { useState } from 'react';
-import Dropdown from '../dropdown/Dropdown';
+import { useState, useRef, useEffect } from "react";
+import Dropdown from "../dropdown/Dropdown";
 
-import './Navbar.scss';
+import "./Navbar.scss";
 
-import logo from '../../resources/img/user-profile-logo.png';
-import dashboardLogo from '../../resources/svg/dashboard-logo.svg';
-import profileLogo from '../../resources/svg/profile-logo.svg';
-import activitiesLogo from '../../resources/svg/activities-logo.svg';
-import dataLogo from '../../resources/svg/data-logo.svg';
-import forumLogo from '../../resources/svg/forum-logo.svg';
-import learnLogo from '../../resources/svg/learn-logo.svg';
+import logo from "../../resources/img/user-profile-logo.png";
+import dashboardLogo from "../../resources/svg/dashboard-logo.svg";
+import profileLogo from "../../resources/svg/profile-logo.svg";
+import activitiesLogo from "../../resources/svg/activities-logo.svg";
+import dataLogo from "../../resources/svg/data-logo.svg";
+import forumLogo from "../../resources/svg/forum-logo.svg";
+import learnLogo from "../../resources/svg/learn-logo.svg";
 
 const Navbar = () => {
-  const dropdownData = {
-    profile: ['Mein Profil', 'Mein Unternehmen', 'Mein Fortschritt', 'Postfach', 'Benutzereinstellung', 'Abmelden'],
-    activities: ['Maßnahmen', 'Quiz', 'Aufgaben'],
-    data: ['Strom/ Gas', 'Wasser', 'Heizung', 'Ressourcen'],
-    forum: ['Chat', 'Telefon'],
-    learn: ['Fortbildungs-Seminare']
-  }
+  const navPanelItems = [
+    {
+      id: 1,
+      label: "Dashboard",
+      image: dashboardLogo,
+      link: [],
+    },
+    {
+      id: 2,
+      label: "Profile",
+      image: profileLogo,
+      link: [
+        "Mein Profil",
+        "Mein Unternehmen",
+        "Mein Fortschritt",
+        "Postfach",
+        "Benutzereinstellung",
+        "Abmelden",
+      ],
+    },
+    {
+      id: 3,
+      label: "Activities",
+      image: activitiesLogo,
+      link: ["Maßnahmen", "Quiz", "Aufgaben"],
+    },
+    {
+      id: 4,
+      label: "Data",
+      image: dataLogo,
+      link: ["Strom/ Gas", "Wasser", "Heizung", "Ressourcen"],
+    },
+    {
+      id: 5,
+      label: "Forum",
+      image: forumLogo,
+      link: ["Chat", "Telefon"],
+    },
+    {
+      id: 6,
+      label: "Learn",
+      image: learnLogo,
+      link: ["Fortbildungs-Seminare"],
+    },
+  ];
 
-  const [isDropdownOpen, setIsDropdownOpen] = useState('');
+  const [navPanelItemsActive, setNavPanelsItemsActive] = useState(1);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(true);
 
-  function toggleDropdown(){
-    setIsDropdownOpen();
+  const clickNavItem = (id) => {
+    setNavPanelsItemsActive(id)
+    setIsDropdownOpen(true)
   }
 
   return (
-    <nav className='nav-panel'>
+    <nav className="nav-panel">
       <img src={logo} alt="logo" className="nav-panel__logo" />
+
       <ul className="nav-panel__menu">
-        <li className="nav-panel__item">
-          <a href='#a' className="nav-panel__link nav-panel__link_active">
-            <img src={dashboardLogo} alt="dashboard-icon" />
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li className="nav-panel__item">
-          <button className="nav-panel__link" onClick={toggleDropdown}>
-            <img src={profileLogo} alt="profile-icon" />
-            <span>Profil</span>
-          </button>
-          <Dropdown links={dropdownData.profile}/> 
-        </li>
-        <li className="nav-panel__item">
-          <button className="nav-panel__link" onClick={toggleDropdown}>
-            <img src={activitiesLogo} alt="activities-icon" />
-            <span>Aktivitäten</span>
-            <Dropdown links={dropdownData.activities}/> 
-          </button>
-        </li>
-        <li className="nav-panel__item">
-          <button className="nav-panel__link">
-            <img src={dataLogo} alt="data-icon" />
-            <span>Daten</span>
-          </button>
-          <Dropdown links={dropdownData.data}/> 
-        </li>
-        <li className="nav-panel__item">
-          <button className="nav-panel__link">
-            <img src={forumLogo} alt="forum-icon" />
-            <span>Forum</span>
-          </button>
-          <Dropdown links={dropdownData.forum}/>
-        </li>
-        <li className="nav-panel__item">
-          <button className="nav-panel__link">
-            <img src={learnLogo} alt="learn-icon" />
-            <span>Lernen</span>
-          </button>
-          <Dropdown links={dropdownData.learn}/>
-        </li>
+        {navPanelItems.map(({ label, image, link, id }) => {
+          return (
+            <li
+              className="nav-panel__item"
+              key={id}
+            >
+              <a
+                href="#a"
+                onClick={() => clickNavItem(id)}
+                className={`nav-panel__link ${
+                  navPanelItemsActive === id ? "nav-panel__link_active" : null
+                }`}
+              >
+                <img src={image} alt={label} />
+                <span>{label}</span>
+              </a>
+              {link.length !== 0 && navPanelItemsActive === id && isDropdownOpen ? (
+                <Dropdown links={link} setIsDropdownOpen={setIsDropdownOpen} />
+              ) : null}
+            </li>
+          );
+        })}
       </ul>
+
       <div className="nav-panel__bottom">
-        <a href="#a" className="nav-panel__bottom-link">Impressum</a>
-        <a href="#a" className="nav-panel__bottom-link">FAQ</a>
+        <a href="#a" className="nav-panel__bottom-link">
+          Impressum
+        </a>
+        <a href="#a" className="nav-panel__bottom-link">
+          FAQ
+        </a>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
+
+// const [isActive, setIsActive] = useState(2);
+
+// return (
+//   <nav className='nav-panel'>
+//     <img src={logo} alt="logo" className="nav-panel__logo" />
+//     <ul className="nav-panel__menu">
+//       {
+//         navPanelItems.map(({label, image, link, id}) => {
+//           return (
+//             <li className='nav-panel__item' key={id}>
+//               <button className={`nav-panel__link ${isActive === id && 'nav-panel__link_active'}`} onClick={() => {
+//                 setIsActive(id);
+//               }}>
+//                 <img src={image} alt="profile-icon" />
+//                 <span>{label}</span>
+//               </button>
+//               {isActive === id && link && <Dropdown links={link} />}
+//             </li>
+//           )
+//         })
+//       }
+//     </ul>
+//     <div className="nav-panel__bottom">
+//       <a href="#a" className="nav-panel__bottom-link">Impressum</a>
+//       <a href="#a" className="nav-panel__bottom-link">FAQ</a>
+//     </div>
+//   </nav>
+// )
