@@ -1,5 +1,16 @@
-import { HomePage, ImprintPage, ProtectionPage, LoginSignUpStartPage, LoginPage, SignUpPage1, SignUpPage2, FinishSignUpPage, Dashboard } from "./pages";
-import "./styles/style.scss"
+import {
+  HomePage,
+  ImprintPage,
+  ProtectionPage,
+  LoginSignUpStartPage,
+  LoginPage,
+  SignUpPage1,
+  SignUpPage2,
+  FinishSignUpPage,
+  Dashboard,
+} from "./pages";
+import Navbar from "./components/navbar/Navbar";
+import "./styles/style.scss";
 
 function App() {
   return (
@@ -12,7 +23,10 @@ function App() {
       {/* <SignUpPage1 /> */}
       {/* <SignUpPage2 /> */}
       {/* <FinishSignUpPage /> */}
-      <Dashboard />
+      <div className="dashboard-container">
+        <Navbar />
+        <Dashboard />
+      </div>
     </div>
   );
 }

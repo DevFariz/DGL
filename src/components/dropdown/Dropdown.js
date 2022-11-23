@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Dropdown.scss";
 
 const Dropdown = ({ links, setIsDropdownOpen }) => {

@@ -108,32 +108,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// const [isActive, setIsActive] = useState(2);
-
-// return (
-//   <nav className='nav-panel'>
-//     <img src={logo} alt="logo" className="nav-panel__logo" />
-//     <ul className="nav-panel__menu">
-//       {
-//         navPanelItems.map(({label, image, link, id}) => {
-//           return (
-//             <li className='nav-panel__item' key={id}>
-//               <button className={`nav-panel__link ${isActive === id && 'nav-panel__link_active'}`} onClick={() => {
-//                 setIsActive(id);
-//               }}>
-//                 <img src={image} alt="profile-icon" />
-//                 <span>{label}</span>
-//               </button>
-//               {isActive === id && link && <Dropdown links={link} />}
-//             </li>
-//           )
-//         })
-//       }
-//     </ul>
-//     <div className="nav-panel__bottom">
-//       <a href="#a" className="nav-panel__bottom-link">Impressum</a>
-//       <a href="#a" className="nav-panel__bottom-link">FAQ</a>
-//     </div>
-//   </nav>
-// )
