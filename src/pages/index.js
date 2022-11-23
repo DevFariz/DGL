@@ -7,5 +7,6 @@ import SignUpPage1 from "./login_signupPageComponents/SignUpPage1";
 import SignUpPage2 from "./login_signupPageComponents/SignUpPage2";
 import FinishSignUpPage from "./login_signupPageComponents/FinishSignUpPage";
 import Dashboard from "./dashboard/Dashboard";
+import UserPanel from "./userPanel/UserPanel";
 
-export {HomePage, ImprintPage, ProtectionPage, LoginSignUpStartPage, LoginPage, SignUpPage1, SignUpPage2, FinishSignUpPage, Dashboard}
+export {HomePage, ImprintPage, ProtectionPage, LoginSignUpStartPage, LoginPage, SignUpPage1, SignUpPage2, FinishSignUpPage, Dashboard, UserPanel}

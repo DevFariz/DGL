@@ -1,0 +1,8 @@
+.main-profile{
+
+  &-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 20px 60px;
+  }
+}

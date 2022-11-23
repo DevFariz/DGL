@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Dropdown from "../dropdown/Dropdown";
 
 import "./Navbar.scss";

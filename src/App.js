@@ -8,8 +8,8 @@ import {
   SignUpPage2,
   FinishSignUpPage,
   Dashboard,
+  UserPanel
 } from "./pages";
-import Navbar from "./components/navbar/Navbar";
 import "./styles/style.scss";
 
 function App() {
@@ -23,10 +23,7 @@ function App() {
       {/* <SignUpPage1 /> */}
       {/* <SignUpPage2 /> */}
       {/* <FinishSignUpPage /> */}
-      <div className="dashboard-container">
-        <Navbar />
-        <Dashboard />
-      </div>
+      <UserPanel />
     </div>
   );
 }

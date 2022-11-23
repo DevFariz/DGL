@@ -1,4 +1,3 @@
-import Navbar from "../../components/navbar/Navbar";
 import DashboardHeader from "./dashboardHeader/DashboardHeader";
 import DashboardSavings from "./dashboardSavings/DashboardSavings";
 
