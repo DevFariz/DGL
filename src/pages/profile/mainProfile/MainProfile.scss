@@ -6,6 +6,16 @@
     grid-template-rows: repeat(13, 1fr);
     column-gap: 20px;
     padding: 20px 60px;
-    height: 790px;
+    height: 800px;
+    background: url('../../../resources/img/main-profile-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  &__title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    color: #727272;
   }
 }

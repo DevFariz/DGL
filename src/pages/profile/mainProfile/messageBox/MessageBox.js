@@ -3,7 +3,7 @@ import "./MessageBox.scss";
 const MessageBox = () => {
   return (
     <section className="main-profile__messagebox">
-      <h2 className="main-profile__messagebox-title">Nachricht versenden</h2>
+      <h2 className="main-profile__title">Nachricht versenden</h2>
       <div>
         <div className="main-profile__messagebox-left">
           <input type="text" placeholder="Empfänger*in" />
