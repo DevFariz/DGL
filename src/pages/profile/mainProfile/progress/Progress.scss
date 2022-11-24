@@ -1,0 +1,17 @@
+.main-profile__progress{
+
+  grid-column: span 7;
+  grid-row: span 8;
+  padding: 30px 40px;background: #FFFFFF;
+  mix-blend-mode: normal;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.160784);
+  border-radius: 10px;
+
+  &-title{
+    margin-bottom: 20px;
+  }
+
+  img{
+    object-fit: cover;
+  }
+}
