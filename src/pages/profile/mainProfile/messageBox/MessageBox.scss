@@ -1,0 +1,57 @@
+@import "../../../../styles/style.scss";
+@import "../../../../styles/breakpoints.scss";
+@import "../../../../styles/mixin.scss";
+
+.main-profile__messagebox {
+  grid-column: span 6;
+  grid-row: span 5;
+  padding: 20px 40px 40px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.160784);
+  border-radius: 10px;
+  margin-bottom: 60px;
+
+  &-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    color: #727272;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-left {
+    input {
+      display: block;
+      padding: 18px 30px;
+      font-size: 20px;
+      line-height: 24px;
+      color: #727272;
+      margin-bottom: 12px;
+      border: 1px solid #727272;
+      border-radius: 30px;
+
+      &:nth-child(2){
+        width: 620px;
+      }
+    }
+  }
+
+  &-right{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+  }
+
+  &-submit{
+    padding: 12px 81px ;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    color: #FFFFFF;
+  }
+}

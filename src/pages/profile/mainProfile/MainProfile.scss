@@ -3,6 +3,9 @@
   &-container{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    column-gap: 20px;
     padding: 20px 60px;
+    height: 790px;
   }
 }
