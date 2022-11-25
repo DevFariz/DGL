@@ -1,6 +1,7 @@
 import MainProfileUserSettings from './mainProfileUserSettings/MainProfileUserSettings';
 import MessageBox from './messageBox/MessageBox';
 import Progress from './progress/Progress';
+import Company from './company/Company';
 
 import './MainProfile.scss'
 import MainProfileImg from '../../../resources/img/mainProfile.jpg'
@@ -13,6 +14,7 @@ const MainProfile = () => {
         <MainProfileUserSettings />
         <MessageBox />
         <Progress />
+        <Company />
       </div>
     </main>
   )

@@ -23,6 +23,7 @@ function App() {
       {/* <SignUpPage1 /> */}
       {/* <SignUpPage2 /> */}
       {/* <FinishSignUpPage /> */}
+
       <UserPanel />
     </div>
   );
