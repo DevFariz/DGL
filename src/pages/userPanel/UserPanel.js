@@ -1,13 +1,13 @@
 import Navbar from "../../components/navbar/Navbar";
 import Dashboard from "../dashboard/Dashboard";
-import MainProfile from "../profile/mainProfile/MainProfile"
+import Profile from "../profile/Profile";
 
 const UserPanel = () => {
   return (
     <div className="dashboard-container">
       <Navbar />
       {/* <Dashboard /> */}
-      <MainProfile />
+      <Profile />
     </div>
   );
 };
