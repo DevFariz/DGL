@@ -1,0 +1,74 @@
+.post-office-box__chat-item {
+  position: relative;
+  display: flex;
+  padding: 25px 20px;
+  border-bottom: 1px solid #e2e2e2;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: #e8e8e8;
+  }
+
+  div {
+    margin-right: 20px;
+  }
+
+
+  &-from {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #747373;
+    margin-bottom: 7px;
+  }
+
+  &-message {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #acacac;
+  }
+
+  &-delete {
+    align-self: flex-end;
+    transform: translateY(8px);
+
+    button {
+      padding: 3px;
+      align-self: flex-end;
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: 0.2s;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+  
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &-icon {
+    width: 54px;
+    height: 54px;
+    img{
+      border-radius: 50%
+    }
+    
+  }
+
+  &-date {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #acacac;
+  }
+}

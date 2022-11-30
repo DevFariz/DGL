@@ -1,0 +1,16 @@
+.post-office-box {
+
+  padding: 0 0 55px 80px;
+
+  &__container{
+    display: flex;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 90px;
+    color: #4ca26e;
+    margin-bottom: 45px;
+  }
+}
