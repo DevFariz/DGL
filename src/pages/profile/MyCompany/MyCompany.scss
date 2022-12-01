@@ -1,0 +1,36 @@
+.profile-my-company {
+  padding-left: 80px;
+  &__title {
+    margin-bottom: 115px;
+    margin-top: 35px;
+  }
+
+  &-items{
+    display: flex;
+    justify-content: center;
+
+    & > div {
+      width: 225px;
+      padding: 50px 18px 10px;
+      background: linear-gradient(180deg, #9fd1ae 0%, #41988c 100%);
+      mix-blend-mode: normal;
+      border-radius: 10px;
+      margin: 0 25px;
+    }
+  }  
+
+  &__data {
+    font-size: 80px;
+    line-height: 101px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

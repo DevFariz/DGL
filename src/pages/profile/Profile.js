@@ -5,6 +5,7 @@ import MyProgress from './myProgress/MyProgress';
 import './Profile.scss'
 
 import MainProfileImg from "../../resources/img/mainProfile.jpg";
+import MyCompany from './MyCompany/MyCompany';
 
 
 const Profile = () => {
@@ -13,7 +14,8 @@ const Profile = () => {
       <img src={MainProfileImg} alt="header image" />
       {/* <MainProfile /> */}
       {/* <PostOfficeBox /> */}
-      <MyProgress />
+      {/* <MyProgress /> */}
+      <MyCompany />
     </main>
 
   )
