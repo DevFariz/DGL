@@ -1,5 +1,6 @@
 import MainProfile from './mainProfile/MainProfile';
 import PostOfficeBox from './postOfficeBox/PostOfficeBox';
+import MyProgress from './myProgress/MyProgress';
 
 import './Profile.scss'
 
@@ -11,7 +12,8 @@ const Profile = () => {
     <main className='profile'>
       <img src={MainProfileImg} alt="header image" />
       {/* <MainProfile /> */}
-      <PostOfficeBox />
+      {/* <PostOfficeBox /> */}
+      <MyProgress />
     </main>
 
   )
